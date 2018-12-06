@@ -7,7 +7,7 @@ var bubble2 = {
 };
 
 function setup() {
-  	createCanvas(windowWidth,windowHeight);
+  	createCanvas(380,350);
 }
 
 function draw() {
@@ -17,8 +17,8 @@ function draw() {
 }
 
 function display() {
-	for (var w = 0; w < windowWidth; w = w + 100){
-        for(var h = 0; h < windowHeight; h = h + 100){
+	for (var w = 0; w < windowWidth; w = w + 50){
+        for(var h = 0; h < windowHeight; h = h + 50){
         	fill(255-w/5,0,255-h/5);
 		ellipse(w,h,bubble.radius,bubble.radius);
     		fill(255-h/5,0,255-w/5);
