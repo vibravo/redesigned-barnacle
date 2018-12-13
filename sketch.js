@@ -7,7 +7,7 @@ var bubble2 = {
 };
 
 function setup() {
-  	createCanvas(380,350);
+  	createCanvas(400,600);
 }
 
 function draw() {
