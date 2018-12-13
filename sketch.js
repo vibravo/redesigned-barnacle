@@ -1,9 +1,9 @@
 var bubble = {
-    radius: 10
+    radius: 1
 };
 
 var bubble2 = {
-    radius: 20,
+    radius: 51,
 };
 
 function setup() {
@@ -17,20 +17,20 @@ function draw() {
 }
 
 function display() {
-	for (var w = 0; w < windowWidth; w = w + 50){
-        for(var h = 0; h < windowHeight; h = h + 50){
-        	fill(255-w/5,0,255-h/5);
-		ellipse(w,h,bubble.radius,bubble.radius);
-    		fill(255-h/5,0,255-w/5);
-       		ellipse(w+100,h,bubble2.radius,bubble2.radius);
+	for (var w = 0; w < windowWidth; w = w + 140){
+        for(var h = 0; h < windowHeight; h = h + 130){
+        fill(200-w/3,0,200-h/8);
+				ellipse(w+20,h,bubble.radius,bubble.radius);
+    		fill(255-h/2,0,255-w/8);
+        ellipse(w+80,h-60,bubble2.radius,bubble2.radius);
    
-        bubble.radius = bubble.radius + .04;
-        bubble2.radius = bubble2.radius - .03
+        bubble.radius = bubble.radius + .01;
+        bubble2.radius = bubble2.radius - .01
 
-        if (bubble.radius > 20){
+        if (bubble.radius > 51){
             bubble.radius = bubble.radius*-1;
             
-        if (bubble2.radius < 10){
+        if (bubble2.radius < 1){
             bubble2.radius = bubble2.radius*-1;
   
   	}
