@@ -22,7 +22,7 @@ function display() {
         fill(200-w/3,0,200-h/8);
 				ellipse(w+20,h+20,bubble.radius,bubble.radius);
     		fill(255-h/2,0,255-w/8);
-        ellipse(w+80,h-20,bubble2.radius,bubble2.radius);
+        ellipse(w+80,h,bubble2.radius,bubble2.radius);
    
         bubble.radius = bubble.radius + .05;
         bubble2.radius = bubble2.radius - .05;
